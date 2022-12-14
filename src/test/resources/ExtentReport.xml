@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AllTest" >
+	<test name="LogoTest">
+		<parameter name="browser" value="chrome" />
+		<parameter name="author" value="David" />
+		<classes>
+			<class name="com.extentReportTest.TestClass">
+				<methods>
+					<include name="validateLogo"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="LoginTest">
+		<parameter name="browser" value="firefox" />
+		<parameter name="author" value="Smith" />
+		<classes>
+			<class name="com.extentReportTest.TestClass">
+				<methods>
+					<include name="validateValidLogin"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Job Title Test">
+		<parameter name="browser" value="edge" />
+		<parameter name="author" value="Allen" />
+		<classes>
+			<class name="com.extentReportTest.TestClass">
+				<methods>
+					<include name="validateJobTitle"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> 
