@@ -1,40 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="3" parallel="tests" name="Failed suite [GridSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="3" parallel="tests" name="Test3(failed)">
-    <parameter name="browser" value="MicrosoftEdge"/>
+<suite thread-count="2" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="methods" name="Test(failed)">
     <classes>
-      <class name="kubernetes.SeleniumGridWithKubernetes">
+      <class name="seleniumgridPractice.Grid1">
         <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="TestOnMicrosoftEdge"/>
+          <include name="test1_OnChrome"/>
         </methods>
-      </class> <!-- kubernetes.SeleniumGridWithKubernetes -->
+      </class> <!-- seleniumgridPractice.Grid1 -->
     </classes>
-  </test> <!-- Test3(failed) -->
-  <test thread-count="3" parallel="tests" name="Test2(failed)">
-    <parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="kubernetes.SeleniumGridWithKubernetes">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="OrangeHRMTestOnFirefox"/>
-        </methods>
-      </class> <!-- kubernetes.SeleniumGridWithKubernetes -->
-    </classes>
-  </test> <!-- Test2(failed) -->
-  <test thread-count="3" parallel="tests" name="Test1(failed)">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="kubernetes.SeleniumGridWithKubernetes">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="googleTestOnChrome"/>
-        </methods>
-      </class> <!-- kubernetes.SeleniumGridWithKubernetes -->
-    </classes>
-  </test> <!-- Test1(failed) -->
-</suite> <!-- Failed suite [GridSuite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

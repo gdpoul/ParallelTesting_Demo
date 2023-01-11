@@ -1,36 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results ignored="6" total="9" passed="3" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Chrome test pass]]>
+    </line>
+    <line>
+      <![CDATA[Firefox test pass]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-11-23T13:04:57 IST" name="GridSuite" finished-at="2022-11-23T13:06:38 IST" duration-ms="100554">
+  <suite started-at="2023-01-11T11:41:33 IST" name="GridSuite" finished-at="2023-01-11T11:42:25 IST" duration-ms="51792">
     <groups>
     </groups>
-    <test started-at="2022-11-23T13:04:57 IST" name="Test2" finished-at="2022-11-23T13:06:03 IST" duration-ms="65386">
+    <test started-at="2023-01-11T11:41:33 IST" name="Test3" finished-at="2023-01-11T11:42:11 IST" duration-ms="37832">
       <class name="kubernetes.SeleniumGridWithKubernetes">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:kubernetes.SeleniumGridWithKubernetes@22555ebf]" started-at="2022-11-23T13:04:57 IST" name="setUp" finished-at="2022-11-23T13:05:36 IST" duration-ms="38701" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="OrangeHRMTestOnFirefox()[pri:0, instance:kubernetes.SeleniumGridWithKubernetes@22555ebf]" started-at="2022-11-23T13:05:36 IST" name="OrangeHRMTestOnFirefox" finished-at="2022-11-23T13:05:55 IST" duration-ms="18948" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OrangeHRMTestOnFirefox -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:kubernetes.SeleniumGridWithKubernetes@22555ebf]" started-at="2022-11-23T13:05:55 IST" name="tearDown" finished-at="2022-11-23T13:06:03 IST" duration-ms="7632" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- kubernetes.SeleniumGridWithKubernetes -->
-    </test> <!-- Test2 -->
-    <test started-at="2022-11-23T13:04:57 IST" name="Test3" finished-at="2022-11-23T13:06:04 IST" duration-ms="66429">
-      <class name="kubernetes.SeleniumGridWithKubernetes">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:kubernetes.SeleniumGridWithKubernetes@54d9d12d]" started-at="2022-11-23T13:04:57 IST" name="setUp" finished-at="2022-11-23T13:05:47 IST" duration-ms="49782" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:kubernetes.SeleniumGridWithKubernetes@3c41ed1d]" started-at="2023-01-11T11:41:33 IST" name="setUp" finished-at="2023-01-11T11:41:56 IST" duration-ms="22608" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,19 +24,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TestOnMicrosoftEdge()[pri:0, instance:kubernetes.SeleniumGridWithKubernetes@54d9d12d]" started-at="2022-11-23T13:05:47 IST" name="TestOnMicrosoftEdge" finished-at="2022-11-23T13:06:03 IST" duration-ms="15897" status="PASS">
+        <test-method signature="TestOnMicrosoftEdge()[pri:0, instance:kubernetes.SeleniumGridWithKubernetes@3c41ed1d]" started-at="2023-01-11T11:41:56 IST" name="TestOnMicrosoftEdge" finished-at="2023-01-11T11:42:10 IST" duration-ms="14592" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestOnMicrosoftEdge -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:kubernetes.SeleniumGridWithKubernetes@54d9d12d]" started-at="2022-11-23T13:06:03 IST" name="tearDown" finished-at="2022-11-23T13:06:04 IST" duration-ms="626" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:kubernetes.SeleniumGridWithKubernetes@3c41ed1d]" started-at="2023-01-11T11:42:10 IST" name="tearDown" finished-at="2023-01-11T11:42:11 IST" duration-ms="577" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- kubernetes.SeleniumGridWithKubernetes -->
     </test> <!-- Test3 -->
-    <test started-at="2022-11-23T13:04:57 IST" name="Test1" finished-at="2022-11-23T13:06:38 IST" duration-ms="100554">
+    <test started-at="2023-01-11T11:41:33 IST" name="Test1" finished-at="2023-01-11T11:42:20 IST" duration-ms="46615">
       <class name="kubernetes.SeleniumGridWithKubernetes">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:kubernetes.SeleniumGridWithKubernetes@313ac989]" started-at="2022-11-23T13:04:57 IST" name="setUp" finished-at="2022-11-23T13:06:19 IST" duration-ms="82172" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:kubernetes.SeleniumGridWithKubernetes@3023df74]" started-at="2023-01-11T11:41:33 IST" name="setUp" finished-at="2023-01-11T11:42:01 IST" duration-ms="28213" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -64,15 +47,44 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="googleTestOnChrome()[pri:0, instance:kubernetes.SeleniumGridWithKubernetes@313ac989]" started-at="2022-11-23T13:06:19 IST" name="googleTestOnChrome" finished-at="2022-11-23T13:06:37 IST" duration-ms="17701" status="PASS">
+        <test-method signature="googleTestOnChrome()[pri:0, instance:kubernetes.SeleniumGridWithKubernetes@3023df74]" started-at="2023-01-11T11:42:01 IST" name="googleTestOnChrome" finished-at="2023-01-11T11:42:19 IST" duration-ms="17862" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Chrome test pass]]>
+            </line>
           </reporter-output>
         </test-method> <!-- googleTestOnChrome -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:kubernetes.SeleniumGridWithKubernetes@313ac989]" started-at="2022-11-23T13:06:37 IST" name="tearDown" finished-at="2022-11-23T13:06:38 IST" duration-ms="570" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:kubernetes.SeleniumGridWithKubernetes@3023df74]" started-at="2023-01-11T11:42:19 IST" name="tearDown" finished-at="2023-01-11T11:42:20 IST" duration-ms="494" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- kubernetes.SeleniumGridWithKubernetes -->
     </test> <!-- Test1 -->
+    <test started-at="2023-01-11T11:41:33 IST" name="Test2" finished-at="2023-01-11T11:42:25 IST" duration-ms="51791">
+      <class name="kubernetes.SeleniumGridWithKubernetes">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:kubernetes.SeleniumGridWithKubernetes@292b08d6]" started-at="2023-01-11T11:41:33 IST" name="setUp" finished-at="2023-01-11T11:41:51 IST" duration-ms="17515" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="OrangeHRMTestOnFirefox()[pri:0, instance:kubernetes.SeleniumGridWithKubernetes@292b08d6]" started-at="2023-01-11T11:41:51 IST" name="OrangeHRMTestOnFirefox" finished-at="2023-01-11T11:42:20 IST" duration-ms="29536" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Firefox test pass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- OrangeHRMTestOnFirefox -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:kubernetes.SeleniumGridWithKubernetes@292b08d6]" started-at="2023-01-11T11:42:20 IST" name="tearDown" finished-at="2023-01-11T11:42:25 IST" duration-ms="4659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- kubernetes.SeleniumGridWithKubernetes -->
+    </test> <!-- Test2 -->
   </suite> <!-- GridSuite -->
 </testng-results>

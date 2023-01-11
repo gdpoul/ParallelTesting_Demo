@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
@@ -24,7 +25,7 @@ public class SeleniumGridWithKubernetes {
 	@BeforeTest
 	public void setUp(String browser) throws MalformedURLException {
 		
-		String girdURL="http://127.0.0.1:55767/";
+		String girdURL="http://127.0.0.1:56253/";
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		
 		if(browser.equalsIgnoreCase("chrome")) {	
@@ -56,6 +57,7 @@ public class SeleniumGridWithKubernetes {
 		driver.findElement(By.xpath("//div[@class='FPdoLc lJ9FBc']/center/input[2]")).click();
 		String actualTitle = driver.getTitle();
 		Assert.assertEquals(actualTitle, "Google Doodles","Title Not Match");
+		Reporter.log("Chrome test pass", true);
 	}
 	
 
@@ -68,6 +70,7 @@ public class SeleniumGridWithKubernetes {
 		String actualTitle = driver.getTitle();
 		String ExpectedTitle="OrangeHRM";
 		Assert.assertEquals(actualTitle, ExpectedTitle,"Title Not Match");
+		Reporter.log("Firefox test pass", true);
 	}
 	@Test
 	public void TestOnMicrosoftEdge() {
@@ -87,6 +90,7 @@ public class SeleniumGridWithKubernetes {
 				driver.switchTo().window(handle);
 				String actualTitle = driver.getTitle();
 				Assert.assertEquals(actualTitle, "Selenium - Wikipedia","title mismatch");
+				Reporter.log("Microsoft Edge test pass", true);
 			}
 			
 		}

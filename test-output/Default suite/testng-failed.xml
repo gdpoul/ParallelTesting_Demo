@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumgridPractice.Grid1">
+      <class name="seleniumgridPractice.GridPractice">
         <methods>
-          <include name="test1OnChrome"/>
+          <include name="testFacebookOnFirefox"/>
+          <include name="testOrangeHRMOnChrome"/>
+          <include name="testGoogleOnEdge"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- seleniumgridPractice.Grid1 -->
+      </class> <!-- seleniumgridPractice.GridPractice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
