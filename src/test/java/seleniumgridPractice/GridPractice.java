@@ -30,20 +30,20 @@ public class GridPractice {
 		DesiredCapabilities cap=new DesiredCapabilities();
 		String nodeURL="http://localhost:4444";
 		
-		if(browserName.equalsIgnoreCase("chrome")) {
+		if(browserName.equals("chrome")) {
 			
 			cap.setBrowserName(browserName);
 			cap.setPlatform(Platform.WIN10);
 			System.out.println("#### Test Case Exceution Start on -> "+browserName);
 
 		}
-		else if(browserName.equalsIgnoreCase("firefox")) {
+		else if(browserName.equals("firefox")) {
 			cap.setBrowserName(browserName);
 			cap.setPlatform(Platform.WIN10);
 			System.out.println("#### Test Case Exceution Start on -> "+browserName);
 
 		}
-		else if (browserName.equalsIgnoreCase("MicrosoftEdge")) {
+		else if (browserName.equals("MicrosoftEdge")) {
 			cap.setBrowserName(browserName);
 			cap.setPlatform(Platform.WIN10);
 			System.out.println("#### Test Case Exceution Start on -> "+browserName);
