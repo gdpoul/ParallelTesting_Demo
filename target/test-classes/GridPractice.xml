@@ -12,7 +12,7 @@
 		</classes>
 	</test>
 	
-	<test name="Test2">
+ 	<test name="Test2">
 		<parameter name="Browser" value="firefox" />
 		<classes>
 			<class name="seleniumgridPractice.GridPractice">

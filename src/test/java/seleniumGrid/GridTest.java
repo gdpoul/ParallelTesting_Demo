@@ -1,4 +1,4 @@
-package seleniumgridPractice;
+package seleniumGrid;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -7,9 +7,6 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
@@ -18,9 +15,8 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+public class GridTest {
 
-public class GridPractice {
 	public WebDriver driver;
 	
 	@Parameters("Browser")
@@ -50,13 +46,15 @@ public class GridPractice {
 
 
 		}
-		driver=new RemoteWebDriver(new URL(hubURL), cap);
+		System.out.println("Hello1");
+		driver=new RemoteWebDriver(new URL("http://192.168.1.67:4444"), cap);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		System.out.println("Hello2");		
 		
 	}
 	@Test
 	public void testOrangeHRMOnChrome() {
-		
+	
 		  driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		  driver.findElement(By.name("username")).sendKeys("Admin");
 		  driver.findElement(By.name("password")).sendKeys("admin123");
@@ -86,8 +84,8 @@ public class GridPractice {
 	
 	@AfterTest
 	public void tearDown() {
-		System.out.println("#### Test Case Exceution End ######");
 		driver.quit();
 	}
+
 
 }
